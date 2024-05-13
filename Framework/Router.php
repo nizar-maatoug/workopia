@@ -2,6 +2,8 @@
 
 
 require_once "../App/controllers/HomeController.php";
+require_once "../App/controllers/AuthController.php";
+
 
 class Router {
 

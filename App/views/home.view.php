@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-</head>
-<body>
+
+<?php
+include('../App/views/partials/header.view.php');
+
+include('../App/views/partials/menu.view.php');
+
+?>
 
 <h1>Home page</h1>
 
@@ -15,5 +14,13 @@
     <?php endforeach; ?>
 <?php endforeach; ?>
     
-</body>
-</html>
+
+
+<?php
+include('../App/views/partials/footer.view.php');
+
+
+
+?>
+
+

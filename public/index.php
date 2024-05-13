@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 
 require_once "../Framework/Router.php";
 
@@ -18,7 +18,10 @@ require("../routes.php");
 // Get current URI and HTTP method
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
-$router->route($uri, 'GET');
+$requestMethod = strtoupper($_SERVER['REQUEST_METHOD']);
+
+
+$router->route($uri, $requestMethod);
 
 
 
